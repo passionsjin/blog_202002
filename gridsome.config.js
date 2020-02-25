@@ -1,10 +1,10 @@
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-  siteName: 'siteName',
-  siteUrl: `https://www.gridsome.org`,
-  titleTemplate: '%s - titleTemplate',
-  siteDescription: 'siteDescription',
+  siteName: 'MY BLOG',
+  siteUrl: `https://passionsjin.github.io`,
+  titleTemplate: '%s - JIN',
+  siteDescription: 'YJ BLOG',
 
   chainWebpack(config, { isServer }) {
     config.module.rules.delete('svg')

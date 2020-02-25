@@ -5,7 +5,9 @@
   "scripts": {
     "develop": "gridsome develop",
     "explore": "gridsome explore",
-    "build": "gridsome build"
+    "build": "gridsome build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages master -d dist"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
