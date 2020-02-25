@@ -1,10 +1,10 @@
 const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
-  siteName: 'Gridsome',
+  siteName: 'siteName',
   siteUrl: `https://www.gridsome.org`,
-  titleTemplate: '%s - Gridsome',
-  siteDescription: 'Gridsome is a free & open source Vue.js-powered framework for building websites & apps that are fast by default 🚀.',
+  titleTemplate: '%s - titleTemplate',
+  siteDescription: 'siteDescription',
 
   chainWebpack(config, { isServer }) {
     config.module.rules.delete('svg')
@@ -32,26 +32,26 @@ module.exports = {
   templates: {
     BlogPost: '/blog/:year/:month/:day/:slug',
     Contributor: '/contributor/:id',
-    Starter: '/starters/:title',
-    Platform: '/starters/platform/:id',
-    Example: node => node.path
+    // Starter: '/starters/:title',
+    // Platform: '/starters/platform/:id',
+    // Example: node => node.path
   },
 
   plugins: [
     {
       use: '@gridsome/plugin-google-analytics',
       options: {
-        id: 'UA-127625720-1'
+        id: 'UA-157454872-1'
       }
     },
-    {
-      use: '@gridsome/plugin-critical',
-      options: {
-        paths: ['/'],
-        width: 1300,
-        height: 900
-      }
-    },
+    // {
+    //   use: '@gridsome/plugin-critical',
+    //   options: {
+    //     paths: ['/'],
+    //     width: 1300,
+    //     height: 900
+    //   }
+    // },
     {
       use: '@gridsome/vue-remark',
       options: {
@@ -73,18 +73,18 @@ module.exports = {
         }
       }
     },
-    {
-      use: '@gridsome/source-filesystem',
-      options: {
-        path: 'examples/*.md',
-        typeName: 'Example',
-        remark: {
-          plugins: [
-            '@gridsome/remark-prismjs'
-          ]
-        }
-      }
-    },
+    // {
+    //   use: '@gridsome/source-filesystem',
+    //   options: {
+    //     path: 'examples/*.md',
+    //     typeName: 'Example',
+    //     remark: {
+    //       plugins: [
+    //         '@gridsome/remark-prismjs'
+    //       ]
+    //     }
+    //   }
+    // },
     {
       use: '@gridsome/source-filesystem',
       options: {

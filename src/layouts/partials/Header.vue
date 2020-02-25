@@ -12,7 +12,7 @@
       <nav class="header-actions flex">
         <ToggleTheme />
 
-        <a
+        <!-- <a
           aria-label="Twitter"
           href="//twitter.com/gridsome"
           rel="noopener noreferrer"
@@ -31,7 +31,7 @@
           title="Join our discord"
         >
           <discord-logo/>
-        </a>
+        </a> 
 
         <div class="has-dropdown">
           <a
@@ -67,7 +67,7 @@
               Website Repository
             </a>
           </div>
-        </div>
+        </div>-->
       </nav>
     </div>
   </header>
@@ -87,17 +87,17 @@ import Nav from './Nav'
 import SearchForm from '@/components/SearchForm.vue'
 import ToggleTheme from '@/components/ToggleTheme.vue'
 import GithubLogo from '@/assets/images/github-logo.svg'
-import TwitterLogo from '@/assets/images/twitter-logo.svg'
-import DiscordLogo from '@/assets/images/discord-logo.svg'
+// import TwitterLogo from '@/assets/images/twitter-logo.svg'
+// import DiscordLogo from '@/assets/images/discord-logo.svg'
 import LazyHydrate from 'vue-lazy-hydration'
 
 export default {
   components: {
     Logo,
     GithubLogo,
-    TwitterLogo,
+    // TwitterLogo,
     ToggleTheme,
-    DiscordLogo,
+    // DiscordLogo,
     SearchForm,
     Nav,
     LazyHydrate

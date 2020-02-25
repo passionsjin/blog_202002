@@ -59,34 +59,7 @@ query ($id: ID!) {
         }
       }
     }
-    starters: belongsTo(filter: {typeName: {eq: Starter}}) {
-      totalCount
-      pageInfo {
-        totalPages
-        currentPage
-      }
-      edges {
-        node {
-          ...on Starter {
-              id
-              title
-              description
-              preview
-              repo
-              platforms {
-                title
-                logo
-              }
-              author {
-                title
-                path
-              }
-              path
-              screenshot  (width: 840, height:840)
-          }
-        }
-      }
-    }
+    
   }
 }
 </page-query>

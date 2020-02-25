@@ -1,11 +1,11 @@
 <template>
   <Layout class="layout-homepage">
 
-    <LazyHydrate when-idle>
+    <!-- <LazyHydrate when-idle>
       <home-intro-simple />
-    </LazyHydrate>
+    </LazyHydrate> -->
     
-    <LazyHydrate when-visible>
+    <!-- <LazyHydrate when-visible>
       <home-how-it-work-simple />
     </LazyHydrate>
     
@@ -23,7 +23,7 @@
 
     <LazyHydrate when-visible>
       <home-community />
-    </LazyHydrate>
+    </LazyHydrate> -->
 
     <LazyHydrate when-visible>
       <home-blog />
@@ -34,28 +34,28 @@
 
 <script>
 import LazyHydrate from 'vue-lazy-hydration'
-import HomeIntroSimple from '@/components/home/HomeIntroSimple.vue'
-import HomeHowItWorkSimple from '@/components/home/HomeHowItWorkSimple.vue'
+// import HomeIntroSimple from '@/components/home/HomeIntroSimple.vue'
+// import HomeHowItWorkSimple from '@/components/home/HomeHowItWorkSimple.vue'
 import HomeBlog from '@/components/home/HomeBlog.vue'
-import HomeFeatures from '@/components/home/HomeFeatures.vue'
-import HomeExamples from '@/components/home/HomeExamples.vue'
-import HomeCommunity from '@/components/home/HomeCommunity.vue'
-import HomeConnect from '@/components/home/HomeConnect.vue'
+// import HomeFeatures from '@/components/home/HomeFeatures.vue'
+// import HomeExamples from '@/components/home/HomeExamples.vue'
+// import HomeCommunity from '@/components/home/HomeCommunity.vue'
+// import HomeConnect from '@/components/home/HomeConnect.vue'
 
 export default {
   components: {
     LazyHydrate,
-    HomeIntroSimple,
-    HomeHowItWorkSimple,
-    HomeExamples,
-    HomeCommunity,
-    HomeConnect,
-    HomeFeatures,
+    // HomeIntroSimple,
+    // HomeHowItWorkSimple,
+    // HomeExamples,
+    // HomeCommunity,
+    // HomeConnect,
+    // HomeFeatures,
     HomeBlog
   },
   
   metaInfo: {
-    title: 'Modern Site Generator for Vue.js'
+    title: 'Create blog project!'
   }
 }
 </script>

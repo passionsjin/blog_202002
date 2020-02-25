@@ -17,7 +17,7 @@
 
       </div>
 
-      <Newsletter />
+      <!-- <Newsletter /> -->
     </Section>
   </Layout>
 </template>
@@ -42,11 +42,11 @@ query ($id: ID!) {
 
 <script>
 import PostMeta from '@/components/PostMeta.vue'
-import Newsletter from '@/components/Newsletter.vue'
+// import Newsletter from '@/components/Newsletter.vue'
 export default {
   components: {
     PostMeta,
-    Newsletter
+    // Newsletter
   },
   metaInfo () {
     return {
