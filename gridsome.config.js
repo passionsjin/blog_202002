@@ -2,7 +2,7 @@ const nodeExternals = require('webpack-node-externals')
 
 module.exports = {
   siteName: 'MY BLOG',
-  siteUrl: `https://passionsjin.github.io`,
+  siteUrl: 'https://passionsjin.github.io',
   titleTemplate: '%s - JIN',
   siteDescription: 'YJ BLOG',
   pathPrefix: '/passionsjin',
