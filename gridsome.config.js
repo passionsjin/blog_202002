@@ -5,8 +5,7 @@ module.exports = {
   siteUrl: 'https://passionsjin.github.io',
   titleTemplate: '%s - JIN',
   siteDescription: 'YJ BLOG',
-  pathPrefix: '/passionsjin',
-
+  
   chainWebpack(config, { isServer }) {
     config.module.rules.delete('svg')
     config.module.rule('svg')
