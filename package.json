@@ -3,11 +3,7 @@
   "version": "1.0.0",
   "name": "gridsome.org",
   "scripts": {
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "build": "gridsome build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages master -d dist"
+    "deploy": "gridsome build && gh-pages -d dist -b master"
   },
   "dependencies": {
     "@gridsome/plugin-google-analytics": "^0.1.0",
